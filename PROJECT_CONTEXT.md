@@ -233,6 +233,14 @@ Include changed paths, tests or checks performed, and anything the next contribu
 
 ## Active Work
 
+Owner: Ahmad + Codex
+Branch: `codex/d1-d2-d8-verification`
+Exact files: `ademix/simulator/test_independent_verification.py`, `ademix/data/test_asset_dependencies.py`, `evidence/d1-d2-d8-verification-2026-10-24.md`, `PROJECT_CONTEXT.md`
+Purpose: D1 independent hand calculations, D2 repeated-shift stability, and D8 repository-local asset dependency/case checks without changing simulator behavior or Professor-owned frontend source.
+Expected handoff: commit and integrate only after backend/data checks pass; D3 platform recovery remains a separate Ditto-reliability follow-up.
+
+Status update: D1 independent calculations and D2 eight-shift/72-hour stability pass. D8 found a real visual-owner blocker: all five Kenney plant GLBs reference `Textures/colormap.png`, but that pinned CC0 texture is missing from `frontend/public/models/Textures/`. The standalone verifier and exact upstream path are recorded in `evidence/d1-d2-d8-verification-2026-10-24.md`; do not mark D8 complete until Professor + Claude add and verify the asset.
+
 ### Lock — Claude — B2 fuel and ESG presentation — 2026-10-24
 
 ```text
